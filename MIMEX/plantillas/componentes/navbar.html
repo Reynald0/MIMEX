@@ -1,0 +1,24 @@
+<div class="navbar-fixed">
+  <nav class="light-blue darken-3">
+      <div class="nav-wrapper">
+        <a href="{% url 'inicio' %}" class="brand-logo">Sistema MIMEX</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="{% url 'inicio' %}">
+              <i class="material-icons right">turned_in_not</i>
+              Inicio
+            </a>
+          </li>
+        </ul>
+        <ul class="side-nav light-blue darken-3" id="mobile-demo"> <!-- Navbar para dispositivos moviles -->
+          <li>
+            <a href="{% url 'inicio' %}">
+              <i class="material-icons right">turned_in_not</i>
+              Inicio
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</div>
