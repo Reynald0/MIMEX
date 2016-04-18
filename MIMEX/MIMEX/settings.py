@@ -123,4 +123,8 @@ STATIC_URL = '/static/'
 
 #Esta ruta permite usar la carpeta static dentro de las aplicaciones
 # Ademas es la que reconocera el servidor al momento de ejecutar collectstatic
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
