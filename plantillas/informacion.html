@@ -4,7 +4,8 @@
 	CAMPECHE
 {% endblock encabezado%}
 {% block contenido %}
-	 <div class="row">
+      <div class="row">
+      <img class="responsive-img" src="{% static 'images/campeche-edo.jpg' %}">
       <div class="col s12">
       	<p class="justificar">
 			El estado de Campeche se ubica a nivel nacional con una de las principales entidades productoras y exportadoras de miel. La producción de miel se vio afectada a nivel mundial por efectos del culma, como resultado de la poca oferta y creciente demanda, la miel llegó a cotizarse hasta en 3 mil 400 dólares la tonelada en el mercado internacional, beneficiando con mejores precios de compra a los apicultores y quienes vendieron a Miel y Cera y a Apicultores de Champotón seguramente alcanzarán una remanenci.
@@ -17,23 +18,32 @@
 			<br><br>
 			Además, el producto es de una pureza no encontrada en otras mieles naturales, pues mantiene la cristaulzación de los azúcares, ingrediente que es natural por lo que ello garantiza la integridad, cauldad y no le resta enzimas con el calentamiento.
 		</p>
-		<div class="divider"></div>
-		<h5><b>Municipios productores</b></h5>
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="{% static 'images/produccion.jpg' %}">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Producción<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Municipios productores<i class="material-icons right">close</i></span>
+                   <p class="jutificar">
+                        Cabe señalar que la mayor producción de miel en el estado se concentra en los municipios de:
+                        <ul>
+                              <li>Champotón</li>
+                              <li>Campeche</li>
+                              <li>Calkiní</li>
+                        </ul>
+                              Le siguen en su conjunto:
+                        <ul>
+                              <li>Hopelchén</li>
+                              <li>Hecelchakán</li>
+                              <li>Tenabo</li>
+                        </ul>
+                        Existe un gran potencial de producción en <b>Calakmul, Escárcega y Candelaria</b>. Paulzada aun cuenta con pocos productores y una gran extensión para detonar esta actividad.
+                  </p>
+                </div>
+              </div>
       </div>
-      <p class="jutificar">
-      	Cabe señalar que la mayor producción de miel en el estado se concentra en los municipios de:
-      	<ul>
-      		<li>Champotón</li>
-      		<li>Campeche</li>
-      		<li>Calkiní</li>
-      	</ul>
-      		Le siguen en su conjunto:
-      	<ul>
-      		<li>Hopelchén</li>
-      		<li>Hecelchakán</li>
-      		<li>Tenabo</li>
-      	</ul>
-      		Existe un gran potencial de producción en <b>Calakmul, Escárcega y Candelaria</b>. Paulzada aun cuenta con pocos productores y una gran extensión para detonar esta actividad.
-      </p>
     </div>
 {% endblock contenido %}
